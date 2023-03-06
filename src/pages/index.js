@@ -17,6 +17,7 @@ import kanap from "../styles/assets/kanap.png"
 import piquante from "../styles/assets/piquante.png"
 import kasa from "../styles/assets/kasa.png"
 import portfolio from "../styles/assets/portfolio.png"
+import student from "../styles/assets/student-portfolio.png"
 
 
 
@@ -201,6 +202,17 @@ export default function Home() {
                 height={"60%"}
                 layout="responsive"
                 src={portfolio}
+              />
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a href='https://poetic-paprenjak-ab04c9.netlify.app/'>
+              <Image
+                className="rounded-lg object-cover hover:scale-75"
+                width={"90%"}
+                height={"60%"}
+                layout="responsive"
+                src={student}
               />
               </a>
             </div>
