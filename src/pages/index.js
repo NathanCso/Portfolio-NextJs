@@ -18,6 +18,7 @@ import piquante from "../styles/assets/piquante.png"
 import kasa from "../styles/assets/kasa.png"
 import portfolio from "../styles/assets/portfolio.png"
 import student from "../styles/assets/student-portfolio.png"
+import ocean from "../styles/assets/ocean.png"
 
 
 
@@ -213,6 +214,17 @@ export default function Home() {
                 height={"60%"}
                 layout="responsive"
                 src={student}
+              />
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a href='https://ocean-save-nextproject-28iq.vercel.app/'>
+              <Image
+                className="rounded-lg object-cover hover:scale-75"
+                width={"90%"}
+                height={"60%"}
+                layout="responsive"
+                src={ocean}
               />
               </a>
             </div>
