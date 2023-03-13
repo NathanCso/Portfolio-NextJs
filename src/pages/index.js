@@ -35,9 +35,9 @@ export default function Home() {
       <main className=' bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40'>
         <section className=' min-h-screen' >
          <nav className=' py-10 mb-12 flex justify-between'>
-          <h1 className='  text-sm my-3 font-burtons'>Portfolio</h1>
+          <h1 className=' dark:text-gray-200 text-sm my-3 font-burtons'>Portfolio</h1>
            <ul className=' flex items-center'>
-            <li><BsFillMoonStarsFill
+            <li className='dark:text-gray-200'><BsFillMoonStarsFill
             onClick={() => setDarkMode (!darkMode)}
              className=' cursor-pointer text-1xl' />
             </li>
@@ -76,6 +76,7 @@ export default function Home() {
             </p>
           </div>
           <div className=' lg:flex gap-10'> 
+
             {/* Carte Design */}
             <div className=' text-center  shadow-lg  p-10 rounded-xl my-10 dark:bg-white flex-1 '>
             <Image src={react} width={100} height={100}/>
@@ -94,7 +95,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">Bootstrap</p>
               <p className="text-gray-800 py-1">HTML/CSS</p>
             </div>
-            {/* Carte différn */}
+
+            {/* Carte différente */}
             <div className=' text-center  shadow-lg  p-10 rounded-xl my-10 dark:bg-white flex-1'>
             <Image src={language} width={100} height={100}/>
             <h3 className="text-lg font-medium pt-8 pb-2  ">
@@ -109,6 +111,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Connaissance de Visual Studio Code et ses extensions</p>
               <p className="text-gray-800 py-1">Utilisation de Figma</p>
             </div>
+
             {/* Carte Code */}
             <div className=' text-center  shadow-lg  p-10 rounded-xl my-10 dark:bg-white flex-1'>
             <Image src={soft} width={100} height={100}/>
@@ -139,9 +142,12 @@ export default function Home() {
             Certains projets sont visitables directement pour les autres vous serez redirigé sur ma page <span className="text-teal-500">GitHub </span>
             </p>
           </div>
+
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <a className='' href='https://taupe-starburst-904973.netlify.app/'>
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>HTML , CSS</strong> </h1>
+                <p className='dark:text-gray-200'>Respect d'une maquette simple contenant quelques difficultés techniques en CSS</p>
+              <a className='booki' href='https://taupe-starburst-904973.netlify.app/'>
               <Image
                 className=" hover:scale-75 rounded-lg object-cover"
                 width={"90%"}
@@ -152,6 +158,8 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>HTML , CSS , JavaScript</strong> </h1>
+                <p className='dark:text-gray-200'>Projet centré sur l'accesibilité SEO et Optimisation / Rapport d'analyse </p>
               <a href='https://nathancso.github.io/P4-SEO-La-panthere/'>
               <Image
                 className="rounded-lg object-cover hover:scale-75"
@@ -163,6 +171,8 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>JavaScript</strong> </h1>
+                <p className='dark:text-gray-200'>Site E-Commerce / Appel API / Ajout dynamique / Confirmation de commande </p>
               <a href='https://github.com/NathanCso/P5-Kanap'> 
               <Image
                 className="rounded-lg object-cover hover:scale-75"
@@ -174,6 +184,8 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>JavaScript , NodeJS , MongoDB</strong> </h1>
+                <p className='dark:text-gray-200'> Création API / Gestion du CRUD / Sécurité / Base de données </p>
               <a href='https://github.com/NathanCso/P6-API-Hot-Takes'>
               <Image
                 className="rounded-lg object-cover hover:scale-75"
@@ -185,6 +197,8 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>React</strong> </h1>
+                <p className='dark:text-gray-200'> Application React / Composants / Ajout Dynamique / React-Router / Figma  </p>
               <a href='https://github.com/NathanCso/P7-React-Kasa/tree/main/kasa'>
               <Image
                 className="rounded-lg object-cover hover:scale-75"
@@ -196,17 +210,8 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a href='https://famous-narwhal-b433da.netlify.app/'>
-              <Image
-                className="rounded-lg object-cover hover:scale-75"
-                width={"90%"}
-                height={"60%"}
-                layout="responsive"
-                src={portfolio}
-              />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>HTML , CSS </strong></h1>
+                <p className='dark:text-gray-200'> Portfolio  étudiante en communication / Ajout d'animations CSS / Cartes projets  </p>
               <a href='https://poetic-paprenjak-ab04c9.netlify.app/'>
               <Image
                 className="rounded-lg object-cover hover:scale-75"
@@ -218,7 +223,9 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a href='https://ocean-save-nextproject-28iq.vercel.app/'>
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>React , NextJS ,  Tailwind CSS</strong> </h1>
+                <p className='dark:text-gray-200'> Application NextJS pour une association fictive de protection des océans  </p>
+              <a  href='https://ocean-save-nextproject-28iq.vercel.app/'>
               <Image
                 className="rounded-lg object-cover hover:scale-75"
                 width={"90%"}

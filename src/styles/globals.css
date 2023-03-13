@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+.booki:hover{
+  
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
