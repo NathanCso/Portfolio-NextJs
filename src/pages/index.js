@@ -19,6 +19,7 @@ import kasa from "../styles/assets/kasa.png"
 import portfolio from "../styles/assets/portfolio.png"
 import student from "../styles/assets/student-portfolio.png"
 import ocean from "../styles/assets/ocean.png"
+import travel from "../styles/assets/Traveliing.png"
 
 
 
@@ -170,6 +171,21 @@ export default function Home() {
               />
               </a>
             </div>
+
+            <div className="basis-1/3 flex-1">
+            <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'> React , Tailwind CSS</strong></h1>
+                <p className='dark:text-gray-200'> Site vitrine pour une agence de voyage factice / Page unique  </p>
+              <a href='https://traveeliing-single-page-react.vercel.app/'>
+              <Image
+                className="rounded-lg object-cover hover:scale-75"
+                width={"90%"}
+                height={"60%"}
+                layout="responsive"
+                src={travel}
+              />
+              </a>
+            </div>
+
             <div className="basis-1/3 flex-1">
             <h1 className='dark:text-gray-200'>Technologies utilisées : <strong className=' text-violet-500'>JavaScript</strong> </h1>
                 <p className='dark:text-gray-200'>Site E-Commerce / Appel API / Ajout dynamique / Confirmation de commande </p>
